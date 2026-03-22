@@ -1,15 +1,24 @@
-![splash](../splash_small.webp)
+---
+title: "Main page"
+bookIcon: "wayvr_logo_traced"
+bookFlatSection: true
+---
 
-Welcome to the WayVR wiki! Use sections on the left to get started.
+{{% center %}}
+
+![splash](/splash_small.webp)
+
+<h3>Welcome to the WayVR wiki! Use sections on the left to get started.</h3>
+
+{{% /center %}}
 
 ## Getting Started
 
 ### Community Support
 
-Join our community for help, discussions, and updates:
+Join our community for help, discussions, and updates (**#wayvr**):
 
-- **Matrix**: [Join us on Matrix](https://matrix.to/#/#linux-vr-adventures:matrix.org)
-- **Discord**: [Join us on Discord](https://discord.gg/EHAYe3tTYa)
+[![LVRA Matrix](https://img.shields.io/matrix/linux-vr-adventures:matrix.org?logo=matrix&style=for-the-badge)](https://matrix.to/#/#linux-vr-adventures:matrix.org) [![LVRA Discord](https://img.shields.io/discord/1065291958328758352?style=for-the-badge&logo=discord)](https://discord.gg/EHAYe3tTYa)
 
 ### Quick Start Guide
 

@@ -11,4 +11,5 @@ weight: 2
 - **AppImage**: Download from [Releases](https://github.com/wlx-team/wayvr/releases) - Most users' preferred method
 - **Arch Linux (AUR)**: `wayvr` or `wayvr-git` packages
 - **Nix**: `wayvr` package from nixpkgs-xr
-- **SteamVR**: See [installation instructions](basics/installation) for Flatpak Steam users
+
+See [README](https://github.com/wayvr-org/wayvr) for more information about installation instructions.
