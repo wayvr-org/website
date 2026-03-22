@@ -1,0 +1,17 @@
+baseURL: 'https://wayvr.org/'
+languageCode: 'en-us'
+title: 'WayVR'
+theme: 'hugo-book'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+
+params:
+  BookTheme: 'dark'
+  BookSection: 'docs'
+  BookLogo: 'icon.webp'
+  BookFavicon: 'icon.webp'
