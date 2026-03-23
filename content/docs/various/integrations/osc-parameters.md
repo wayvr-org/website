@@ -1,6 +1,5 @@
 ---
 title: "OSC Parameters"
-bookIcon: "extension"
 ---
 
 # OSC (Open Sound Control) parameters

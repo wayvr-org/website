@@ -1,3 +1,7 @@
+---
+title: "Tab"
+---
+
 ## Tab component
 
 ### `<Tab>`

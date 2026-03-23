@@ -1,3 +1,7 @@
+---
+title: "Slider"
+---
+
 ## Slider component
 
 ### `<Slider>`

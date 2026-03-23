@@ -1,4 +1,8 @@
-## Checkbox component
+---
+title: "CheckBox"
+---
+
+## CheckBox component
 
 ### `<CheckBox>`
 

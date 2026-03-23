@@ -1,4 +1,8 @@
-## Radiobox component
+---
+title: "RadioBox"
+---
+
+## RadioBox component
 
 ### `<RadioBox>`
 

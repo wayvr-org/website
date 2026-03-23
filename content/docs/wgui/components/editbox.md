@@ -1,3 +1,7 @@
+---
+title: "EditBox"
+---
+
 ## EditBox component
 
 ### `<EditBox>`
