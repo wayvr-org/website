@@ -20,4 +20,6 @@ _Translated by key_
 
 _optional value that will be sent with internal events_
 
+`color_checked`: #FFAABB | #FFAABBCC
+
 `checked`: **int** (default: 0)
