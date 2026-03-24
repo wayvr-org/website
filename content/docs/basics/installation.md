@@ -8,7 +8,7 @@ weight: 2
 
 **Pre-built Packages (Recommended)**
 
-- **AppImage**: Download from [Releases](https://github.com/wlx-team/wayvr/releases) - Most users' preferred method
+- **AppImage**: Download from [Releases](https://github.com/wayvr-org/wayvr/releases) - Most users' preferred method
 - **Arch Linux (AUR)**: `wayvr` or `wayvr-git` packages
 - **Nix**: `wayvr` package from nixpkgs-xr
 

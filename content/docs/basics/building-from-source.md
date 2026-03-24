@@ -75,7 +75,7 @@ Dependencies:
 
 Enable this if you want XSO-compatible OSC parameters in VRChat
 
-Supported parameters are explained here: [OSC Parameters](https://github.com/wlx-team/wayvr/wiki/OSC-Parameters)
+Supported parameters are explained here: [OSC Parameters](/docs/various/integrations/osc-parameters)
 
 Dependencies: None
 

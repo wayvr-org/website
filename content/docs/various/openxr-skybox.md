@@ -24,5 +24,5 @@ echo 'skybox_texture: my-skybox.dds' > ~/.config/wayvr/conf.d/skybox.yaml
 Criteria:
 
 - Path can be absolute, or relative to `~/.config/wayvr/`.
-- File must be DDS (See: [Custom Textures](https://github.com/wlx-team/wayvr/wiki/Custom-Textures))
+- File must be DDS (See: [Custom Textures](/docs/various/custom-textures))
 - Image must be an equirectangular (aka "HDRI" or "Spherical 360") image.

@@ -1,6 +1,6 @@
 # Custom UI Elements
 
-Elements on custom panels may be modified at runtime using [wayvrctl](../integrations/wayvr-ipc).
+Elements on custom panels may be modified at runtime using [wayvrctl](/docs/various/integrations/wayvr-ipc).
 
 For more, refer to: `wayvrctl panel-modify --help`
 
@@ -124,7 +124,7 @@ Available argument value types (case insensitive):
 
 Sends a key using the virtual keyboard. If WayVR is focused, the key is sent to the WayVR app.
 
-Supported VirtualKey values are listed [here](https://github.com/galister/wlx-overlay-s/blob/f2bd169c2217d51cd2de862a6429444bf326f471/wlx-overlay-s/src/subsystem/hid/mod.rs#L336).
+Supported VirtualKey values are listed [here](https://github.com/wayvr-org/wayvr/blob/ee4bb5ca29ab274f66125f2fb8dffed4af4bdd52/wayvr/src/subsystem/hid/mod.rs#L340).
 
 ##### `::PlayspaceReset`
 

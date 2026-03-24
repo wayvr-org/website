@@ -55,7 +55,7 @@ Audio files with the following names can be added to `~/.config/wayvr/sound/`, a
 
 Place custom XML files under `~/.config/wayvr/theme/gui`
 
-The default XML files can be found in [src/assets/gui](https://github.com/wlx-team/wayvr/tree/main/wayvr/src/assets/gui).
+The default XML files can be found in [src/assets/gui](https://github.com/wayvr-org/wayvr/tree/main/wayvr/src/assets/gui).
 
 The `uidev` utility is provided for testing UI elements outside of VR:
 
@@ -68,7 +68,7 @@ TESTBED=../wayvr/src/assets/gui/watch.xml cargo run
 
 Place the XML file and assets for your custom panel under `~/.config/wayvr/theme/gui`
 
-Make sure that the name you choose doesn't override an existing, built-in overlay: [src/assets/gui](https://github.com/wlx-team/wayvr/tree/main/wayvr/src/assets/gui)
+Make sure that the name you choose doesn't override an existing, built-in overlay: [src/assets/gui](https://github.com/wayvr-org/wayvr/tree/main/wayvr/src/assets/gui)
 
 Add your overlay to the `custom_panels` setting via `conf.d`:
 
@@ -87,7 +87,7 @@ Your new panel will show up on the overlay list on the next start.
 
 `wayvrctl` is a CLI tool to interact with WayVR.
 
-Install: `cargo install --git https://github.com/wlx-team/wayvr.git wayvrctl`
+Install: `cargo install --git https://github.com/wayvr-org/wayvr.git wayvrctl`
 
 For a full list of commands, see: `wayvrctl --help` and `wayvrctl panel-modify --help`.
 
@@ -110,8 +110,8 @@ panel-modify mypanel now_playing_album set-color "#0000ff"
 
 ## Basic UI Elements (Wgui)
 
-The available widgets and their attributes are documented at: [wgui/doc/widgets.md](https://github.com/wlx-team/wayvr/blob/main/wgui/doc/widgets.md)
+The available Wgui widgets and their attributes are documented [here](/docs/wgui)
 
 ## Custom UI Elements (WayVR)
 
-An up-to-date list of custom functions, see [wayvr/src/gui/README.md](https://github.com/wlx-team/wayvr/blob/main/wayvr/src/gui/README.md)
+An up-to-date list of custom functions, see [here](/docs/various/custom-ui-elements)
