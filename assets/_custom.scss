@@ -26,6 +26,11 @@ pre {
 	border: 2px solid #008cff44;
 }
 
+.book-menu-content {
+	/* Make some room for footer (w_footer_parent) */
+	padding-bottom: 96px !important;
+}
+
 .book-search input {
 	background: #002e53;
 	border: 2px solid #008cff;
