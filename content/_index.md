@@ -17,10 +17,22 @@ layout: landing
 
   <div class="w_landing_buttons">
     <a href="/docs">
-      <div class="w_button">Documentation</div>
+      <div class="w_button">
+        <img src="icons/documentation.svg"/>
+        Documentation
+      </div>
     </a>
     <a href="https://github.com/wayvr-org/wayvr">
-      <div class="w_button">Github repository</div>
+      <div class="w_button">
+        <img src="icons/github.svg"/>
+        Github repository
+      </div>
+    </a>
+    <a href="https://opencollective.com/wayvr-org">
+      <div class="w_button">
+        <img src="icons/donate.svg"/>
+        Support us
+      </div>
     </a>
   </div>
 </div>
