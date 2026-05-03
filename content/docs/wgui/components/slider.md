@@ -18,7 +18,11 @@ _Needs to be bigger than `min_value`_
 
 `value`: **float**
 
-_Initial slider value_
+_Initial primary slider value_
+
+`value2`: **float**
+
+_Initial secondary slider value (for range sliders)_
 
 `show_value`: "1" | "0"
 
