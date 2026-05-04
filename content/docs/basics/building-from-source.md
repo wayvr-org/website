@@ -58,7 +58,7 @@ Enable this if you're on X11
 Dependencies:
 
 - Arch: `libx11 libxext libxrandr`
-- Fedora: `libXrandr-devel libXext-devel libX11-devel`
+- Fedora: `libXrandr-devel libXext-devel libX11-devel libxkbcommon-x11-devel`
 - Ubuntu: `libx11-6 libxext6 libxrandr2 libx11-dev libxext-dev libxrandr-dev libxkbcommon-x11-dev`
 
 ### Feature `pipewire`
