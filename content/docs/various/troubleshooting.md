@@ -17,11 +17,11 @@ Another way is to run WayVR in the terminal with `--replace`. This will stop the
 
 ## Troubleshooting application compatibility issues
 
-- #### My Wayland application doesn't launch but others do!
+- **My Wayland application doesn't launch but others do!**
 
 Even though some applications support Wayland, some still check for the `DISPLAY` environment variable and an available X11 server, throwing an error. This can also be fixed by running [cage](https://github.com/cage-kiosk/cage) on top of them.
 
-- #### My web browser launches inside my desktop instead of WayVR!
+- **My web browser launches inside my desktop instead of WayVR!**
 
 Close your web browser on your desktop first, then try again.
 
@@ -33,7 +33,7 @@ Run WayVR in `rust-gdb` (or even regular `gdb`) to get more info about the segfa
 
 Attach this with the other logs that you have.
 
-```
+```shell
 rust-gdb -ex run target/debug/wayvr
 ```
 
