@@ -19,6 +19,17 @@ pre {
 	border: 2px solid #008cff !important;
 }
 
+.markdown pre:has(code) {
+	overflow-x: hidden;
+	/* .markdown code { font-size: .875em } from hugo-book, but indenting & wrapping must happen here, in the parent pre.
+	scale down the hanging indent length to align to a monospace grid. */
+	text-indent: hanging calc(2ch * 0.875);
+
+	& code {
+		text-wrap: auto;
+	}
+}
+
 .book-type-docs .book-article {
 	background-color: rgba(0, 30, 60, 0.75);
 	padding: 16px;
@@ -29,9 +40,60 @@ pre {
 .book-menu-content {
 	/* Make some room for footer (w_footer_parent) */
 	padding-bottom: 96px !important;
+
+	/* main nav sidebar */
+	& nav > ul {
+		background-color: rgba(0, 30, 60, 0.75);
+		padding: 16px;
+		border-radius: 8px;
+		border: 2px solid #008cff44;
+
+		& li.book-section-flat {
+			&:first-child, &:last-child {
+				margin: 0;
+			}
+		}
+	}
 }
 
-.book-search input {
-	background: #002e53;
-	border: 2px solid #008cff;
+@media screen and (max-width: 56rem) {
+	.book-menu .book-menu-content {
+		background-color: #00163a;
+	}
+}
+
+.book-search {
+	& input {
+		background: #002e53;
+		border: 2px solid #008cff;
+	}
+
+	&:has(#book-search-results li) input {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	& #book-search-results:has(li) {
+		background-color: rgba(0, 20, 40, 0.90);
+		border: 2px solid #008cff;
+		border-radius: 0 0 8px 8px;
+		border-top-width: 0;
+
+		& li {
+			padding: 4px 8px;
+
+			&:first-child {
+				padding-top: 0;
+			}
+			&:last-child {
+				padding-bottom: 8px;
+				border-bottom-left-radius: 8px;
+				border-bottom-right-radius: 8px;
+			}
+
+			&:nth-child(even) {
+				background-color: rgba(0, 0, 0, 0.30);
+			}
+		}
+	}
 }
