@@ -19,6 +19,17 @@ pre {
 	border: 2px solid #008cff !important;
 }
 
+.markdown pre:has(code) {
+	overflow-x: hidden;
+	/* .markdown code { font-size: .875em } from hugo-book, but indenting & wrapping must happen here, in the parent pre.
+	scale down the hanging indent length to align to a monospace grid. */
+	text-indent: hanging calc(2ch * 0.875);
+
+	& code {
+		text-wrap: auto;
+	}
+}
+
 .book-type-docs .book-article {
 	background-color: rgba(0, 30, 60, 0.75);
 	padding: 16px;
