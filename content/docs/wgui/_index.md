@@ -78,6 +78,8 @@ _They can be used in any widget/component._
 
 `width`, `height`: **float** | **percent**
 
+`aspect_ratio`: **float**
+
 ## Advanced attributes
 
 `interactable`: "1" | "0"
