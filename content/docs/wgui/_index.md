@@ -72,11 +72,13 @@ _They can be used in any widget/component._
 
 `overflow`, `overflow_x`, `overflow_y`: "hidden" | "visible" | "clip" | "scroll"
 
-`min_width`, `min_height`: **float** | **percent**
+`min_width`, `min_height`: **float** | **percent** | "auto"
 
-`max_width`, `max_height`: **float** | **percent**
+`max_width`, `max_height`: **float** | **percent** | "auto"
 
-`width`, `height`: **float** | **percent**
+`width`, `height`: **float** | **percent** | "auto"
+
+`aspect_ratio`: **float**
 
 ## Advanced attributes
 
