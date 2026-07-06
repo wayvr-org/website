@@ -15,9 +15,9 @@ Help extend this wiki by providing packages for additional distros!
 
 The following packages are required:
 
-- Arch: `base-devel cmake libxkbcommon fontconfig dbus alsa-lib python3 wayland`
-- Fedora: `cmake libxkbcommon libxkbcommon-devel fontconfig fontconfig-devel dbus dbus-devel alsa-lib alsa-lib-devel libshaderc-devel openssl-devel python3 wayland-devel`
-- Ubuntu: `build-essential pkg-config cmake libstdc++-12-dev libxkbcommon-dev fontconfig libfontconfig-dev libdbus-1-dev libasound2-dev python3 libwayland-dev`
+- Arch: `base-devel cmake libxkbcommon fontconfig dbus alsa-lib python3 wayland dav1d`
+- Fedora: `cmake libxkbcommon libxkbcommon-devel fontconfig fontconfig-devel dbus dbus-devel alsa-lib alsa-lib-devel libshaderc-devel openssl-devel python3 wayland-devel dav1d libdav1d-devel`
+- Ubuntu: `build-essential pkg-config cmake libstdc++-12-dev libxkbcommon-dev fontconfig libfontconfig-dev libdbus-1-dev libasound2-dev python3 libwayland-dev libdav1d-dev`
 
 ## Available features
 
@@ -70,7 +70,17 @@ Dependencies:
 - Arch: `libpipewire clang`
 - Fedora: `pipewire-devel clang`
 - Ubuntu: `libpipewire-0.3-0 libpipewire-0.3-dev libspa-0.2-dev clang`
+- 
+### Feature `whisper`
 
+Add speech-to-text transcription support.
+
+Dependencies:
+
+- Arch: `vulkan-headers glslc`
+- Fedora: `vulkan-headers glslc`
+- Ubuntu: `libvulkan-dev glslc vulkan-tools`
+- 
 ### Feature `osc`
 
 Enable this if you want XSO-compatible OSC parameters in VRChat
