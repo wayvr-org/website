@@ -7,13 +7,19 @@ bookIcon: "photosphere"
 
 WayVR comes with a skybox for OpenXR.
 
-# Turning off Pass-through
+# Skybox vs Passthrough
 
-Some headsets will show a camera pass-through by default. If skybox is preferred, go to settings, uncheck `Use passthrough`, then scroll down and `Restart software`.
+Turning off the skybox and using passthrough or the solid black background allows WiVRn to allocate more of the video stream to your WayVR apps and screens, resulting in a better quality image.
+
+This is specific to WiVRn, there is no change with wired Monado headsets.
 
 # Changing the Skybox
 
-We are only allowed to include pieces with specific licenses in the git repo, but feel free to procure your own skybox materiel for personal use!
+There is a skybox catalog under the Look and Feel tab of Settings.
+
+Also, if you have a nice skybox with a permissive license, contact us and we may be able to add it to the catalog for you!
+
+# Bring your own Skybox
 
 A custom texture may be set via `~/.config/wayvr/conf.d`:
 
