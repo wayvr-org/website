@@ -6,7 +6,11 @@ bookIcon: "settings"
 
 # Configuration
 
-The sample configuration file is located at [wayvr/src/res/config.yaml](https://github.com/wayvr-org/wayvr/blob/main/wayvr/src/res/config.yaml).
+Most users do not ever have to touch a config file!
+
+Almost all configuration is done via the Dashboard's Settings tab. 
+
+For advanced setups, see [wayvr/src/res/config.yaml](https://github.com/wayvr-org/wayvr/blob/main/wayvr/src/res/config.yaml).
 
 Place this file into `~/.config/wayvr/conf.d` in order to make changes:
 
