@@ -5,14 +5,16 @@ bookIcon: "controller"
 
 # OpenXR Bindings
 
-OpenXR Bindings can be configured using a file.
+Unlike in the case of SteamVR, OpenXR (Monado/WiVRn) bindings are configured in WayVR itself.
 
-By default, the file does not exist and internal defaults will be used.
+Access the Bindings interface from the Dashboard's Controls tab.
 
-Place [openxr_actions.json5](https://github.com/wayvr-org/wayvr/blob/main/wayvr/src/backend/openxr/openxr_actions.json5) in `~/.config/wayvr/` and edit it to your liking. **Do not put it in conf.d!**
+Most modern headsets (other than Steam Frame) use the **Touch Controller** schema.
 
-```bash
-wget -O ~/.config/wayvr/openxr_actions.json5 https://raw.githubusercontent.com/wayvr-org/wayvr/refs/heads/main/wayvr/src/backend/openxr/openxr_actions.json5
-```
+Note that chords are not supported at this time.
+
+# Advanced
+
+See your `~/.config/wayvr/openxr_actions.json5` file. Editing the file manually allows you to make some esoteric binding setups, or even add new controller types.
 
 To see what bindings are available for each controller type, search for the profile in [the OpenXR specification](https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html).
