@@ -20,4 +20,4 @@ _Translated by key_
 
 `sprite_src` | `sprite_src_ext` | `sprite_src_builtin` | `sprite_src_internal`
 
-_Image path (see [sprite](#sprite-widget)) for src descriptions_
+_Image path (see [sprite](../../widgets/sprite)) for src descriptions_

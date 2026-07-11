@@ -46,8 +46,10 @@ _make button act as a toggle (visual only)_
 
 `sprite_src` | `sprite_src_ext` | `sprite_src_builtin` | `sprite_src_internal`
 
-_Image path (see [sprite](#sprite-widget)) for src descriptions_
+_Image path (see [sprite](../../widgets/sprite)) for src descriptions_
 
 #### Info
 
 Child widgets are supported and can be added directly in XML.
+
+Label parameters can be passed by using `text_size`, `text_wrap`, `text_color`, `text_align`, `text_weight`, `text_shadow`, `text_shadow_x`, `text_shadow_y` keys (see [label](../../widgets/label) for more information.)
