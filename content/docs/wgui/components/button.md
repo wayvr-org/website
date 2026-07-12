@@ -48,6 +48,10 @@ _make button act as a toggle (visual only)_
 
 _Image path (see [sprite](../../widgets/sprite)) for src descriptions_
 
+`sprite_color`
+
+_Sprite color_
+
 #### Info
 
 Child widgets are supported and can be added directly in XML.
