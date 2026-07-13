@@ -11,15 +11,51 @@ The settings panel has many of the settings already. Only use settings files for
 
 ## Custom colors
 
-Changing the colors of WayVR can be done via the configs.
+There are a number of built-in palettes available in the dashboard. It's also possible to add your own palette.
 
-Create `~/.config/wayvr/conf.d/theme.yaml` as such:
+A custom palette is a JSON file, which is then placed into `~/.config/wayvr/palettes`. The filename without extension will be the name of the palette. Files are discovered when opening the color palette picker.
 
-```yaml
-color_accent: "#008cff"
-color_danger: "#ff3300"
-color_faded: "#668299"
+```json
+{
+  "primary": "#cba6f7",
+  "on_primary": "#11111b",
+
+  "secondary": "#fab387",
+  "on_secondary": "#11111b",
+
+  "tertiary": "#94e2d5",
+  "on_tertiary": "#11111b",
+
+  "danger": "#f38ba8",
+  "on_danger": "#11111b",
+
+  "background": "#1e1e2e",
+  "on_background": "#cdd6f4",
+
+  "background_variant": "#313244",
+  "on_background_variant": "#a3b4eb",
+
+  "background_contrast": "#181825",
+  "on_background_contrast": "#cdd6f4",
+
+  "outline": "#4c4f69",
+  "shadow": "#11111b",
+  "highlight": "#45475a"
+}
 ```
+
+#### Color Explanations:
+- **Primary**: often used for showing depress/checked/active state of controls
+- **Secondary**: 2nd accent color, used mostly for text highlights
+- **Tertiary**: used for highlights, such as hover effects
+- **Danger**: used for errors and dangerous buttons
+- **Background**: default background
+- **BackgroundVariant**: alternative background color, usually less contrast
+- **BackgroundContrast**: higher-contrast background color
+- **Outline** / Highlight: usually used for borders
+- **Shadow**: text shadows, etc.
+- **On-colors**: these are matching foreground counterparts.
+  - for example, OnPrimary is specifically a color that looks good on top of Primary.
 
 ## Custom timezones
 
