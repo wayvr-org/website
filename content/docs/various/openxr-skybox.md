@@ -21,7 +21,9 @@ Also, if you have a nice skybox with a permissive license, contact us and we may
 
 # Bring your own Skybox
 
-A custom texture may be set by changing the `skybox_texture` in the file `~/.config/wayvr/conf.d/zz-saved-config.json5`.
+A custom texture may be set by changing the `skybox_texture` in the file:
+
+`~/.config/wayvr/conf.d/zz-saved-config.json5`
 
 The path you set is relative to `~/.config/wayvr/`.
 
