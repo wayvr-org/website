@@ -21,11 +21,9 @@ Also, if you have a nice skybox with a permissive license, contact us and we may
 
 # Bring your own Skybox
 
-A custom texture may be set via `~/.config/wayvr/conf.d`:
+A custom texture may be set by changing the `skybox_texture` in the file `~/.config/wayvr/conf.d/zz-saved-config.json5`.
 
-```bash
-echo 'skybox_texture: my-skybox.dds' > ~/.config/wayvr/conf.d/skybox.yaml
-```
+The path you set is relative to `~/.config/wayvr/`.
 
 Criteria:
 
