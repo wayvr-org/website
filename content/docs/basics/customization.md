@@ -9,6 +9,26 @@ bookIcon: "magic_button"
 
 The settings panel has many of the settings already. Only use settings files for settings that are not present in the dashboard.
 
+## Custom timezones
+
+Create `~/.config/wayvr/conf.d/clock.yaml` as such:
+
+```yaml
+timezones:
+  - "Europe/Oslo"
+  - "America/New_York"
+```
+
+Accepted timezones are listed in the [TZ identifier column here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+On the default watch, time zones specified here affect the 2 smaller clocks. 
+
+Once this file is created, the various settings in custom UI that accept the `_timezone` property will use these custom alternate timezones (instead of the default set, which are selected as major ones on different continents from your current actual timezone).
+
+The first timezone is selected with `_timezone="0"`, the second with `_timezone="1"`, and so on.
+
+There is **no need to specify your own local timezone** in here; omitting `_timezone` from a `_source="clock"` Label will display local time.
+
 ## Custom colors
 
 There are a number of built-in palettes available in the dashboard. It's also possible to add your own palette.
@@ -56,22 +76,6 @@ A custom palette is a JSON file, which is then placed into `~/.config/wayvr/pale
 - **Shadow**: text shadows, etc.
 - **On-colors**: these are matching foreground counterparts.
   - for example, OnPrimary is specifically a color that looks good on top of Primary.
-
-## Custom timezones
-
-Create `~/.config/wayvr/conf.d/clock.yaml` as such:
-
-```yaml
-timezones:
-  - "Europe/Oslo"
-  - "America/New_York"
-```
-
-Once this file is created, the various settings in custom UI that accept the `_timezone` property will use these custom alternate timezones (instead of the default set, which are selected as major ones on different continents from your current actual timezone).
-
-The first timezone is selected with `_timezone="0"`, the second with `_timezone="1"`, and so on.
-
-There is **no need to specify your own local timezone** in here; omitting `_timezone` from a `_source="clock"` Label will display local time.
 
 ## Customizing sounds
 
