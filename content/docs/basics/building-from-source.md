@@ -18,7 +18,7 @@ The following packages are required:
 
 - Arch: `base-devel cmake libxkbcommon fontconfig dbus alsa-lib python3 wayland dav1d`
 - Fedora: `cmake libxkbcommon libxkbcommon-devel fontconfig fontconfig-devel dbus dbus-devel alsa-lib alsa-lib-devel libshaderc-devel openssl-devel python3 wayland-devel dav1d libdav1d-devel`
-- Ubuntu: `build-essential pkg-config cmake libstdc++-12-dev libxkbcommon-dev fontconfig libfontconfig-dev libdbus-1-dev libasound2-dev python3 libwayland-dev libdav1d-dev`
+- Ubuntu: `build-essential pkg-config cmake libstdc++-12-dev libxkbcommon-dev fontconfig libfontconfig-dev libdbus-1-dev libasound2-dev python3 libwayland-dev libdav1d-dev libpipewire-0.3-dev libudev-dev libclang-dev`
 
 ## Available features
 
@@ -60,7 +60,7 @@ Dependencies:
 
 - Arch: `libx11 libxext libxrandr`
 - Fedora: `libXrandr-devel libXext-devel libX11-devel libxkbcommon-x11-devel`
-- Ubuntu: `libx11-6 libxext6 libxrandr2 libx11-dev libxext-dev libxrandr-dev libxkbcommon-x11-dev`
+- Ubuntu: `libx11-6 libxext6 libxrandr2 libx11-dev libxext-dev libxrandr-dev libxkbcommon-x11-dev libinput-dev`
 
 ### Feature `pipewire`
 
