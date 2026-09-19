@@ -38,3 +38,7 @@ _Internal (assets) image path_
 `src_internal`: **string**
 
 _wgui internal image path. Do not use directly unless it's related to the core wgui assets._
+
+`color`: #FFAABB | #FFAABBCC
+
+_Sprite color (for svg: it changes currentColor value)_
