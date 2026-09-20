@@ -23,7 +23,7 @@ _Translated by key_
 
 _Text size in pixel units_
 
-`wrap`: "1" | "0" (default: "0")
+`wrap`: "true" | "false" (default: "false")
 
 _Enable text wrapping?_
 
