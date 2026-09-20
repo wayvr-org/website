@@ -42,3 +42,7 @@ _wgui internal image path. Do not use directly unless it's related to the core w
 `color`: #FFAABB | #FFAABBCC
 
 _Sprite color (for svg: it changes currentColor value)_
+
+`parent_color`: "foreground" | "background" | "ignore" (default: "foreground")
+
+_Alter color dynamically based on the parent (button)?_

@@ -42,3 +42,7 @@ _Horizontal offset of the shadow from the original text. Positive is right._
 `shadow_y`: **float** (default: 1.5)
 
 _Vertical offset of the shadow from the original text. Positive is down._
+
+`parent_color`: "foreground" | "background" | "ignore" (default: "foreground")
+
+_Alter color dynamically based on the parent (button)?_
