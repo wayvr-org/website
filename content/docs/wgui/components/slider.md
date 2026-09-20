@@ -25,6 +25,6 @@ _Initial primary slider value_
 
 _Initial secondary slider value (for range sliders)_
 
-`show_value`: "1" | "0"
+`show_value`: "true" | "false"
 
-_Set to 0 if you don't want to display value text in the slider handle_
+_Set to `false` if you don't want to display value text in the slider handle_

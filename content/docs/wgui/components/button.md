@@ -41,7 +41,7 @@ _Tooltip text on hover, raw text (not translated)_
 
 `tooltip_side`: "top" | "bottom" | "left" | "right" (default: top)
 
-`sticky`: "1" | "0" (default: "0")
+`sticky`: "true" | "false" (default: "false")
 
 _make button act as a toggle (visual only)_
 
