@@ -10,4 +10,4 @@ Found a typo? Want to help us out? We would like you to help us improving the we
 
 - Do not use LLMs for human-to-human communication.
 
-- Usage of LLMs for machine translation and spellchecking is acceptable as long as the original text has been written by a human.
+- Usage of LLMs for machine translation and spellchecking is acceptable as long as the original text has been written by a human. In these cases, include the original text and a line that it has been machine translated.
