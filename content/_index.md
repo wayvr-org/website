@@ -14,7 +14,7 @@ layout: landing
 
 <div class="w_landing_content_parent">
 <div class="w_landing_content">
-  <h1 class="w_title">WayVR (previously WlxOverlay-S)</h1>
+  <h1 class="w_title">WayVR</h1>
   <h3 class="w_desc">A lightweight OpenXR/OpenVR overlay for Wayland and X11 Linux desktops.</h3>
 
   <div class="w_landing_buttons">
