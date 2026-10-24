@@ -1,15 +1,3 @@
-@import "./aurora_bg.scss";
-
-body.book-layout-landing {
-	@include aurora_bg_landing;
-	background-color: #000000;
-}
-
-body.book-type-docs {
-	@include aurora_bg_docs;
-	background-color: #000033;
-}
-
 .container {
 	width: 100%;
 }
@@ -49,7 +37,8 @@ pre {
 		border: 2px solid #008cff44;
 
 		& li.book-section-flat {
-			&:first-child, &:last-child {
+			&:first-child,
+			&:last-child {
 				margin: 0;
 			}
 		}
@@ -74,7 +63,7 @@ pre {
 	}
 
 	& #book-search-results:has(li) {
-		background-color: rgba(0, 20, 40, 0.90);
+		background-color: rgba(0, 20, 40, 0.9);
 		border: 2px solid #008cff;
 		border-radius: 0 0 8px 8px;
 		border-top-width: 0;
@@ -92,7 +81,7 @@ pre {
 			}
 
 			&:nth-child(even) {
-				background-color: rgba(0, 0, 0, 0.30);
+				background-color: rgba(0, 0, 0, 0.3);
 			}
 		}
 	}

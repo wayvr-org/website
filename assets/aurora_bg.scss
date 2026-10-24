@@ -1,11 +1,16 @@
-@mixin aurora_bg_landing {
-	background-image: url("aurora_landing.webp");
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-@mixin aurora_bg_docs {
-	background-image: url("aurora_docs.webp");
+@mixin aurora_bg {
+	background-image: url("aurora.avif");
 	background-size: 100vw;
 	background-repeat: no-repeat;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	width: 100%;
+	height: 100%;
+
+	transform-origin: 50% 0%;
+	transform: scale(1.3);
 }

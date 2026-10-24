@@ -1,0 +1,16 @@
+<script>
+	window.addEventListener(
+		"scroll",
+		() => {
+			const el = document.getElementById("w_aurora_bg");
+			if (!el) {
+				return;
+			}
+
+			const parallax = -0.1;
+			const y = window.scrollY * parallax;
+			el.style.transform = `scale(1.3) translateY(${y}px)`;
+		},
+		{ passive: true },
+	);
+</script>

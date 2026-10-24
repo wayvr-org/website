@@ -5,6 +5,8 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	align-items: baseline;
+	background-color: #000225 !important;
+	overflow-x: hidden;
 }
 
 .w_title {
@@ -32,6 +34,12 @@ body {
 	padding: 16px;
 	border-radius: 8px;
 	border: 2px solid #008cff44;
+}
+
+@import "./aurora_bg.scss";
+
+#w_aurora_bg {
+	@include aurora_bg;
 }
 
 .w_landing_content {
