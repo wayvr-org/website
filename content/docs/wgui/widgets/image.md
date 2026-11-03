@@ -9,7 +9,7 @@ description: "Wgui image widget for displaying large images."
 
 ### Image widget for large images
 
-Always set the `width` & `height` of an `<image>`!
+Always set the `width` & `height` of an `<image>` using pixels, e.g. `width="600" height="400"`!
 
 Supported formats: svg, png, jpeg, gif, webp
 
