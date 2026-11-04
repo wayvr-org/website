@@ -103,6 +103,9 @@ cargo build --release --no-default-features --features=x11,openvr
 
 # Build for Wayland+Monado
 cargo build --release --no-default-features --features=wayland,openxr
+
+# Build for Frame (consider mold linker for speed up)
+cargo build --release --no-default-features --features=wayland,openvr
 ```
 
 A single executable will be placed at `../target/release/wayvr`.
