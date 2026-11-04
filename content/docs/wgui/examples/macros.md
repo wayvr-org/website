@@ -6,7 +6,7 @@ description: "Wgui macros for reusable attribute sets applied to elements via th
 ## Macros
 
 ```xml
-<layout>
+<layout version="2">
   <macro name="my_macro"
     margin="4" min_width="100" min_height="100" flex_direction="row" gap="8"
     align_items="center" justify_content="center"/>
