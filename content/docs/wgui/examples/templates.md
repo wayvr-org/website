@@ -6,7 +6,7 @@ description: "Wgui templates for reusable XML layout patterns with parameter pas
 ## Templates
 
 ```xml
-<layout>
+<layout version="2">
   <!-- "title" attrib will be passed to every matching ${title} -->
   <template name="DecoratedTitle">
     <rectangle color="#FFFF00" padding="8" round="4" gap="4">
