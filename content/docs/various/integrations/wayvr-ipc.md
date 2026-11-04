@@ -22,9 +22,7 @@ wayvrctl batch --fail-fast
 
 ---
 
-## Input State
-
-#### Get position of HMD & controllers
+### Get position of HMD & controllers
 
 ```bash
 wayvrctl input-state
@@ -34,85 +32,138 @@ Example output: `{"hmd_pos":[0.0,1.6,0.0],"left":{"pos":[-0.2,1.3,-0.5]},"right"
 
 ---
 
-## Window Management
-
-#### List WayVR windows
+### List WayVR windows
 
 ```bash
 wayvrctl window-list
 ```
 
-Example output: `[{"size_x":1920,"size_y":1080,"visible":true,"handle":{"user":12345},"process_handle":{"user": 23456}}]`
+Example output:
 
-#### Change the visibility of a window on a WayVR display
-
-```bash
-wayvrctl window-set-visible <handle> <visible_0_or_1>
+```txt
+anchor
+watch
+Dashboard
+grab-help
+alttab-help
+wayvr/app/3:vlc
+wayvr/session/36:e20f2343-51d4-4549-9ef8-27fe77a51459/Dolphin#1
 ```
 
-`handle`: A JSON window handle returned by window-list
+### Change the visibility of a window on a WayVR display
 
-Example: `wayvrctl window-set-visible "{\"user\":12345}" 1`
+```bash
+wayvrctl window-set-visible <name> <visible_0_or_1>
+```
+
+Example: `wayvrctl window-set-visible Dashboard 1`
+
+### Get/set window state
+
+Possible values:
+
+- `alpha`: Overlay opacity (0.1 to 1.0)
+- `additive`: Use additive blending when alpha < 1.0
+- `grabbable`: Whether this overlay reacts to grab action
+- `interactable`: Whether laser pointers hit or pass through this overlay
+- `positioning`: Overlay positioning: floating, anchored, static, follow_head, follow_hand_left, follow_hand_right
+- `curvature`: Screen curvature, 0 is disabled
+- `block_input`: Whether hovering this overlay will block inputs to other VR apps
+- `align_to_hmd`: Whether the overlay billboards towards the HMD
+- `global`: Whether the overlay is shown on all sets (unaffected by set switching)
+
+_(The list might be incomplete, run `wayvrctl window-state help get` for more information)_
+
+Example #1: `wayvrctl window-state Dashboard get alpha`
+
+Example #2: `wayvrctl window-state Dashboard set alpha 0.5`
+
+### Get/set window attrib
+
+Possible values:
+
+- stereo: Stereo mode: none, left_right, right_left, top_bottom, bottom_top
+- stereo_full_frame: Whether stereo content is rendered in full frame
+- stereo_adjust_mouse: Whether the mouse position is adjusted for stereo
+- mouse_transform: Mouse transform: default, normal, rotated90, rotated180, rotated270, flipped, flipped90, flipped180, flipped270
+- window_size: Window size in pixels, for example: 1920x1080
+
+(The list might be incomplete, run `wayvrctl window-attrib help get` for more information)
+
+Example #1: `wayvrctl window-attrib wayvr/app/3:vlc get window_size`
+
+Example output: `[1920, 1080]`
+
+Example #2: `wayvrctl window-attrib wayvr/app/3:vlc set window_size 1280x720`
 
 ---
 
-## Process Management
-
-#### List all processes managed by WayVR
+### List all processes managed by WayVR
 
 ```bash
 wayvrctl process-list
 ```
 
-Example output: `[{"name":"eglgears_wayland","handle":{"user":12345},"userdata":{}}]`
+Example output: `[{"name":"eglgears_wayland","handle":12345,"userdata":{}}]`
 
-#### Get WayVR-managed process info
+### Get WayVR-managed process info
 
 ```bash
 wayvrctl process-get <handle>
 ```
 
-`handle`: A JSON process handle returned by `process-list` or `process-launch`
+Example: `wayvrctl process-get 4294967298`
 
-Example: `wayvrctl process-get "{\"user\":12345}"`
+Example output:
 
-#### Terminate a WayVR-managed process
+```json
+{
+	"handle": 4294967298,
+	"name": "vlc",
+	"userdata": {
+		"desktop-entry": "{\"exec_argv\":[\"/usr/bin/vlc\",\"--started-from-file\"],\"app_id\":\"vlc\",\"app_name\":\"VLC media player\",\"icon_path\":\"/usr/share/icons/hicolor/128x128/apps/vlc.png\",\"categories\":[\"AudioVideo\",\"Player\",\"Recorder\"]}"
+	}
+}
+```
+
+### Terminate a WayVR-managed process
 
 ```bash
 wayvrctl process-terminate <handle>
 ```
 
-`handle`: A JSON process handle returned by `process-list` or `process-launch`
+`handle`: A process handle (number) returned by `process-list`, `process-get` or `process-launch`
 
-#### Launch a new process inside WayVR
+### Launch a new process inside WayVR
 
-Reach out `wayvrctl process-launch --help` for detailed information:
-
-```xml
-Usage: wayvrctl process-launch [OPTIONS] <EXEC> [RESOLUTION] <POS> [ICON] [ARGS]
-
-Arguments:
-  <EXEC>        Executable to run
-  [RESOLUTION]  [default: 1920x1080]
-  <POS>         Default positioning [possible values: floating, anchored, static]
-  [ICON]        Absolute path to the app icon
-  [ARGS]        Arguments to pass to executable [default: ]
+Reach out `wayvrctl help process-launch` for detailed information:
 
 ```
+Usage: wayvrctl process-launch [OPTIONS] <COMMAND>...
 
-Example: `wayvrctl process-launch eglgears_wayland "1280x720" floating`
+Arguments:
+  <COMMAND>...  Executable and optional arguments
 
-Available position modes: `floating`, `anchored`, `static`
+Options:
+  -n, --name <NAME>              Name for the overlay [default: ""]
+  -e, --env <ENV>                Environment variables, separated by comma [default: ""]
+  -r, --resolution <RESOLUTION>  [default: 1920x1080]
+  -p, --pos <POS>                Default positioning [default: anchored] [possible values: floating, anchored, static]
+  -i, --icon <ICON>              Absolute path to the app icon [default: ""]
+  -h, --help                     Print help
+```
 
-Example output: `{"user":12345}`
+Example #2: `wayvrctl process-launch dolphin --resolution 512x512 --pos floating`
+
+Example output: `4294967299` (returns process handle)
 
 ---
 
-## GUI widget modifications
+### GUI widget modifications
 
 Reach out `wayvrctl panel-modify --help` for detailed information:
 
-```xml
+```
 Usage: wayvrctl panel-modify <OVERLAY> <ELEMENT> <COMMAND>
 
 Commands:
@@ -130,37 +181,31 @@ Arguments:
 
 ---
 
-## Haptics
+### Trigger haptics on the user's controller
 
-#### Trigger haptics on the user's controller
+`wayvrctl haptics [OPTIONS] <DEVICE>`
+
+```
+Options:
+  -i, --intensity <INTENSITY>  [default: 0.25]
+  -d, --duration <DURATION>    [default: 0.1]
+  -f, --frequency <FREQUENCY>  [default: 0.1]
+  -h, --help                   Print help
+```
 
 `device`: 0 for left, 1 for right controller (default: 0)
 
-`intensity`: Haptic intensity (default: 0.25)
-
-`duration`: Haptic duration (default: 0.1)
-
-`frequency`: Haptic frequency (default: 0.1)
-
-```bash
-wayvrctl haptics -i <intensity> -d <duration> -f <frequency> <device>
-```
-
-Example:
-
-`wayvrctl haptics -i 0.42 -d 0.1 -f 0.1 0`
+Example: `wayvrctl haptics --intensity 0.42 --duration 0.5 --frequency 0.1 0`
 
 ---
 
-## Overlay Management
-
-#### Toggle overlay show/hide state (show/hide your keyboard and displays)
+### Toggle overlay show/hide state (show/hide your keyboard and displays)
 
 ```bash
 wayvrctl show-hide
 ```
 
-#### Switch set
+### Switch set
 
 ```bash
 wayvrctl switch-set <set_or_0>
