@@ -8,7 +8,7 @@ description: "Include and compose Wgui XML files with theme variables and modula
 theme.xml:
 
 ```xml
-<layout>
+<layout version="2">
   <theme>
     <var key="my_red" value="#FF0000" />
     <var key="my_green" value="#00FF00" />
@@ -20,7 +20,7 @@ theme.xml:
 bar.xml:
 
 ```xml
-<layout>
+<layout version="2">
   <elements>
     <!-- utilize theme variables included in theme.xml -->
     <rectangle width="16" height="16" color="~my_red"/>
@@ -33,7 +33,7 @@ bar.xml:
 main.xml:
 
 ```xml
-<layout>
+<layout version="2">
   <!-- Include theme -->
   <include src="theme.xml"/>
 
