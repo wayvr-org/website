@@ -6,7 +6,7 @@ description: "A basic Wgui layout example with labels, divs, and rectangles."
 ## Simple layout
 
 ```xml
-<layout>
+<layout version="2">
   <elements>
     <label text="Hello, world!"/>
     <label translation="WELCOME.HELLO_WORLD" size="20" color="#FF0000"/>
