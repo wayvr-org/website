@@ -43,5 +43,6 @@ layout: landing
       </div>
     </a>
   </div>
+  <img src="screenshot.webp" class="w_landing_screenshot"/>
 </div>
 </div>

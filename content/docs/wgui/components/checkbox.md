@@ -28,3 +28,11 @@ _optional value that will be sent with internal events_
 `color_checked`: #FFAABB | #FFAABBCC
 
 `checked`: **int** (default: 0)
+
+`sprite_src` | `sprite_src_ext` | `sprite_src_builtin` | `sprite_src_internal`
+
+_Image path (see [sprite](../../widgets/sprite)) for src descriptions_
+
+`sprite_color`
+
+_Sprite color_
