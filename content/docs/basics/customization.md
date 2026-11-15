@@ -109,7 +109,7 @@ The default XML files can be found in [src/assets/gui](https://github.com/wayvr-
 The `uidev` utility is provided for testing UI elements outside of VR:
 
 ```sh
-cd wayvr/uidev
+cd uidev
 TESTBED=../wayvr/src/assets/gui/watch.xml cargo run
 ```
 

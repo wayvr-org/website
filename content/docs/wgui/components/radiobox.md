@@ -25,7 +25,9 @@ _Translated by key_
 
 _optional value that will be set as the RadioGroup's value_
 
-`checked`: **int** (default: 0)
+`checked`: **bool** (default: false)
+
+`color_checked`: #FFAABB | #FFAABBCC
 
 ## RadioGroup component
 

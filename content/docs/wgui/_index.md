@@ -95,26 +95,38 @@ _Used in case of overlapping pop-ups or windows, most notably applied to various
 
 _Set to 1 if you want to render overlapping pop-ups to properly render your widgets in order. Wgui renders with as few Vulkan drawcalls as possible, so this is your responsibility._
 
-## Default Colors
+## Palette Colors
 
-_These colors can be defined by the user to control the color scheme. They always exists and can be used in any place a normal color could be used._
+_These colors can be defined by the user to control the color scheme. They always exist and can be used in any place a normal color could be used. Names are case-sensitive._
 
-`~color_text`: default: white(#FFFFFF)
-`~color_accent`: default: light blue(#21ADFF)
-`~color_danger`: default: red(#E60000)
-`~color_faded`: default: grey(#ABBDCC)
-`~color_bg`: default: black(#00121ABF) (color_background in config)
+`primary`, `on_primary`, `secondary`, `on_secondary`, `tertiary`, `on_tertiary`, `danger`, `on_danger`, `background`, `on_background`, `background_variant`, `on_background_variant`, `background_contrast`, `on_background_contrast`, `success`, `on_success`, `outline`, `highlight`, `shadow`
 
-_Only the default colors can be changed with the following suffixes._
+_wgui_ also supports specifying color modifiers, like so:
 
-`_translucent`
+`primary(opacity-0.5)`
 
-_Halves the alpha of the color._
+_Sets the opacity to 50%_
 
-`_10`
-`_20`
-`_30`
-`_40`
-`_50`
+`primary(opacity-0.95)`
 
-_Darkens the color by multiplying it with a percentage. `~color_accent_50` Would be half of the normal brightness but the same alpha. You can't combine the suffixes_
+_Sets the opacity to 95%_
+
+`primary(transparent)`
+
+_Sets the opacity to 0.0_
+
+`primary(opaque)`
+
+_Sets the opacity to 1.0_
+
+`primary(rgb-mult-0.5)`
+
+_Multiplies RGB values by 0.5 (darker color)_
+
+`primary(rgb-add-0.5)`
+
+_Adds 0.5 to RGB channels_
+
+`primary(opacity-0.5,rgb-mult-0.75,rgb-add-0.25)`
+
+_Sets opacity to 0.5, multiplies RGB by 0.75 and adds RGB by 0.25_

@@ -16,7 +16,7 @@ This is specific to WiVRn, there is no change with wired Monado headsets.
 
 # Changing the Skybox
 
-There is a skybox catalog under the Look and Feel tab of Settings.
+There is a skybox catalog under the "Appearance" tab of Settings.
 
 Also, if you have a nice skybox with a permissive license, contact us and we may be able to add it to the catalog for you!
 

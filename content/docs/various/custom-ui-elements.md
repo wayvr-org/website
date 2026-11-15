@@ -195,7 +195,7 @@ Destroys all mirrors that are not currently visible (including those that are in
 
 Restarts WayVR, reloading all settings.
 
-##### `::ShutDown`
+##### `::Shutdown`
 
 Gracefully shuts down WayVR.
 

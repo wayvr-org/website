@@ -12,8 +12,6 @@ Access the Bindings interface from the Dashboard's Controls tab.
 
 Most modern headsets (other than Steam Frame) use the **Touch Controller** schema.
 
-Note that chords are not supported at this time.
-
 # Advanced
 
 See your `~/.config/wayvr/openxr_actions.json5` file. Editing the file manually allows you to make some esoteric binding setups, or even add new controller types.

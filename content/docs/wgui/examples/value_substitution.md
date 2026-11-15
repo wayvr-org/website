@@ -7,10 +7,10 @@ description: "Use theme variables and value substitution in Wgui for theming and
 
 ```xml
 <layout version="2">
-  <theme>
+  <vars>
     <var key="hello" value="Hello, world!" />
     <var key="text_color" value="#FF0000" />
-  </theme>
+  </vars>
 
   <elements>
     <!-- "~hello" will be replaced to "Hello, world!" -->

@@ -22,5 +22,3 @@ DISPLAY= WAYLAND_DISPLAY=wayland-20 yourapp
 ```
 
 Setting `DISPLAY` to an empty string forces various apps to use Wayland instead of X11.
-
-# Troubleshooting

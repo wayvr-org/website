@@ -27,7 +27,7 @@ _optional value that will be sent with internal events_
 
 `color_checked`: #FFAABB | #FFAABBCC
 
-`checked`: **int** (default: 0)
+`checked`: **bool** (default: false)
 
 `sprite_src` | `sprite_src_ext` | `sprite_src_builtin` | `sprite_src_internal`
 

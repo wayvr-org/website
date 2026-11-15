@@ -41,6 +41,6 @@ _.ivf Video path_
 
 _Playback speed multiplier_
 
-`looping`: **int** (default: 0)
+`looping`: **bool** (default: false)
 
 _Play video infinitely instead of once_
